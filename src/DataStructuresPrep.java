@@ -26,7 +26,13 @@ public class DataStructuresPrep {
      *         Ejemplo: subtractAlgorithm(5, 3) retorna 2.
      */
     public int subtractAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
+
+        int count=0;
+        while(a > (b+count)){
+            count=count+1;
+        }
+        return count;
+       // throw new UnsupportedOperationException("Not yet implemented");
     }
 
     /**
@@ -38,7 +44,13 @@ public class DataStructuresPrep {
      *         Ejemplo: multiplyAlgorithm(5, 3) retorna 15.
      */
     public int multiplyAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
+
+        int resultado =0;
+        for(int i=0; i<b ; i++){
+            resultado=resultado+a;
+        }
+        return resultado;
+        //throw new UnsupportedOperationException("Not yet implemented");
 
     }
 
@@ -51,7 +63,14 @@ public class DataStructuresPrep {
      *         Ejemplo: divideWAlgorithm(10, 2) retorna 5.
      */
     public int divideWAlgorithm(int dividend, int divisor) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int count=0;
+        int residuo= dividend;
+        while(residuo >= divisor){
+            count++;
+            residuo=residuo - divisor;
+        }
+        return count;
+        //throw new UnsupportedOperationException("Not yet implemented");
 
     }
 
@@ -64,7 +83,14 @@ public class DataStructuresPrep {
      *         Ejemplo: isPerfectNumber(28) retorna true.
      */
     public boolean isPerfectNumber(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int suma=0;
+        for (int i = 0; i < number; i++) {
+            if(number % i ==0){
+                suma = suma+i;
+            }
+        }
+        return suma==number;
+        //throw new UnsupportedOperationException("Not yet implemented");
     }
 
     /**
