@@ -30,7 +30,10 @@ public class App {
         int resultado_r  = dataStructuresPrep.subtractAlgorithm(30, 5);
         int resultado_m  = dataStructuresPrep.multiplyAlgorithm(3, 5);
         int resultado_d  = dataStructuresPrep.divideWAlgorithm(20, 5);
-        boolean resultado_np  = dataStructuresPrep.isPerfectNumber(6);//isPerfectNumber
+        boolean resultado_np  = dataStructuresPrep.isPerfectNumber(28);//isPerfectNumber
+        int resultado_f  = dataStructuresPrep.getFactorial(5);//getFactorial
+
+
         /*
          * Imprimir el resultado de la operación.
          * 
@@ -49,6 +52,7 @@ public class App {
         System.out.println("El resultado de multiplyAlgorithm  es: " + resultado_m);
         System.out.println("El resultado de divideWAlgorithm  es: " + resultado_d);
         System.out.println("El resultado de isPerfectNumber  es: " + resultado_np);
+        System.out.println("El resultado de isPerfectNumber  es: " + resultado_f);
 
 
     }

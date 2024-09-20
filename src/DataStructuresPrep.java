@@ -84,7 +84,7 @@ public class DataStructuresPrep {
      */
     public boolean isPerfectNumber(int number) {
         int suma=0;
-        for (int i = 0; i < number; i++) {
+        for (int i = 1; i < number; i++) {
             if(number % i ==0){
                 suma = suma+i;
             }
@@ -101,7 +101,14 @@ public class DataStructuresPrep {
      *         Ejemplo: getFactorial(5) retorna 120.
      */
     public int getFactorial(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int factorial=1;
+        int count=1;
+        while(count <= number){
+            factorial=factorial * count;
+            count=count+1;
+        }
+        return count;
+        //throw new UnsupportedOperationException("Not yet implemented");
     }
 
     /**
