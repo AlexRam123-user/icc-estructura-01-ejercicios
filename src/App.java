@@ -32,7 +32,10 @@ public class App {
         int resultado_d  = dataStructuresPrep.divideWAlgorithm(20, 5);
         boolean resultado_np  = dataStructuresPrep.isPerfectNumber(28);//isPerfectNumber
         int resultado_f  = dataStructuresPrep.getFactorial(5);//getFactorial
-
+        int resultado_max  = dataStructuresPrep.findMaximum(new int[]{1, 5, 3, 6, 8, 2});//findMaximum
+        int resultado_pw  = dataStructuresPrep.powerAlgorithm(2,3);//powerAlgorithm
+        boolean resultado_pr  = dataStructuresPrep.isPrime(5);//isPrime
+        int resultado_c  = dataStructuresPrep.countDigits(12345);//countDigits
 
         /*
          * Imprimir el resultado de la operación.
@@ -48,11 +51,15 @@ public class App {
          * como
          * parte de mensajes de salida o en lógicas de decisión más complejas.
          */
-        System.out.println("El resultado de subtractAlgorithm  es: " + resultado_r);
-        System.out.println("El resultado de multiplyAlgorithm  es: " + resultado_m);
-        System.out.println("El resultado de divideWAlgorithm  es: " + resultado_d);
-        System.out.println("El resultado de isPerfectNumber  es: " + resultado_np);
-        System.out.println("El resultado de isPerfectNumber  es: " + resultado_f);
+        System.out.println("El resultado de subtractAlgorithm es: " + resultado_r);
+        System.out.println("El resultado de multiplyAlgorithm es: " + resultado_m);
+        System.out.println("El resultado de divideWAlgorithm es: " + resultado_d);
+        System.out.println("El resultado de isPerfectNumber es: " + resultado_np);
+        System.out.println("El resultado de getFactorial es: " + resultado_f);
+        System.out.println("El resultado de findMaximum es: " + resultado_max);
+        System.out.println("El resultado de powerAlgorithm es: " + resultado_pw);
+        System.out.println("El resultado de isPrime es: " + resultado_pr);
+        System.out.println("El resultado de countDigits es: " + resultado_c);
 
 
     }
